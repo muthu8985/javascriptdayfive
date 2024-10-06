@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript_day_five</title>
+  </head>
+  <body>
+    <!-- onclick	The user clicks an HTML element -->
+    <h1 id="eventlearn">muthu</h1>
+    <button onclick="learn()">Click Me</button>
+    <script>
+      function learn() {
+        document.getElementById("eventlearn").innerHTML = "muthukumar";
+      }
+    </script>
+    <h2 id="str_quotes"></h2>
+    <script>
+      let answer1 = "It's alright";
+      let answer2 = "He is called 'Johnny'";
+      let answer3 = 'He is called "Johnny"';
+
+      document.getElementById("str_quotes").innerHTML =
+        answer1 + "<br>" + answer2 + "<br>" + answer3;
+    </script>
+    <!-- findin stirng length -->
+    <script>
+      let text = "the text to find the length";
+      document.write(text.length);
+    </script>
+    <script>
+
+      // Code	Result	Description
+      // \'	'	Single quote
+      // \"	"	Double quote
+      // \\	\	Backslash
+      let texts = "We are the so-called \"Vikings\" from the north.";
+      document.write(texts)=text;
+    </script>
+    <!--breaking lines -->
+    <p id="demos"></p>
+    <p>The best place to break a code line is after an operator or a comma.</p>
+    <script>
+      document.getElementById("demos").innerHTML = "hello daddy.";
+    </script>
+    <!-- Template strings -->
+    <p id="demotemp"></p>
+
+    <p>Templates are not supported in Internet Explorer.</p>
+
+    <script>
+      let texttemp = `The quick
+    brown fox
+    jumps over
+    the lazy dog`;
+
+      document.getElementById("demotemp").innerHTML = text;
+    </script>
+    <p id="demotype"></p>
+    <p id="demohello"></p>
+    <p id="demoslice"></p>
+    <p id="demoslicem"></p>
+
+    <button onclick="myFunction()">Try it upper</button>
+
+    <p id="demoupper">Hello World!</p>
+
+    <script>
+      function myFunction() {
+        let text = document.getElementById("demoupper").innerHTML;
+        document.getElementById("demoupper").innerHTML = text.toUpperCase();
+      }
+    </script>
+
+    <button onclick="myFunction()">Try it lower</button>
+
+    <p id="demolower">Hello World!</p>
+
+    <script>
+      function myFunction() {
+        let text = document.getElementById("demolower").innerHTML;
+        document.getElementById("demolower").innerHTML = text.toLowerCase();
+      }
+    </script>
+    <p id="concatandplus"></p>
+
+    <script>
+      let text1 = "Hello";
+      let text2 = "World!";
+      let text3 = text1.concat(" ", text2);
+      document.getElementById("concatandplus").innerHTML = text3;
+    </script>
+    <p id="demotrim"></p>
+
+    <script>
+      let text1trim = "     Hello World!     ";
+      let text2trim = text1.trim();
+
+      document.getElementById("demotrim").innerHTML =
+        "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+    </script>
+    <!-- by using trimstart and trimend we can get the space trim... -->
+
+    <p id="demo"></p>
+
+    <script>
+      let textpad = "5";
+      text = text.padStart(40, "pad");
+
+      document.getElementById("demopad").innerHTML = text;
+    </script>
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demoreplace">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+      function myFunction() {
+        let textrep = document.getElementById("demoreplace").innerHTML;
+        document.getElementById("demoreplace").innerHTML = text.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+    </script>
+    <!-- the replace() method is case sensitive. Writing MICROSOFT (with upper-case) will not work: -->
+    <!-- To replace case insensitive, use a regular expression with an /i flag (insensitive): -->
+
+    <p>ES2021 intoduced the string method replaceAll().</p>
+
+    <p id="demoreplace"></p>
+
+    <script>
+      let textreplace =
+        "I love cats. Cats are very easy to love. Cats are very popular.";
+      textreplace = text.replaceAll("Cats", "Dogs");
+      textreplace = text.replaceAll("cats", "dogs");
+
+      document.getElementById("demoreplace").innerHTML = text;
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
