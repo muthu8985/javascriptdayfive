@@ -137,6 +137,21 @@
 
       document.getElementById("demoreplace").innerHTML = text;
     </script>
+    <p id="demosearch"></p>
+
+    <script>
+    let textsearch = "Please locate where 'locate' occurs!";
+    let index = text.indexOf("locate");
+    document.getElementById("demosearch").innerHTML = index; 
+    </script>
+    <p id="demoindex"></p>
+
+    <script>
+    let textindex = "Please locate where 'locate' occurs!";
+    let indexof = text.lastIndexOf("locate");
+    document.getElementById("demoindex").innerHTML = index;
+    </script>
+    
 
     <script src="index.js"></script>
   </body>
